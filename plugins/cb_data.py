@@ -25,7 +25,7 @@ async def rename(bot,update):
 	
 @Client.on_callback_query(filters.regex("doc"))
 async def doc(bot,update):
-     new_name = update.message.text
+     new_name = update.message.textꜰɪʟᴇ 
      name = new_name.split(":-")
      new_filename = name[1]
      file_path = f"downloads/{new_filename}"
@@ -33,7 +33,7 @@ async def doc(bot,update):
      ms = await update.message.edit("```⚡ ᴛʀʏɪɴɢ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ...⏳```")
      c_time = time.time()
      try:
-     	path = await bot.download_media(message = file, progress=progress_for_pyrogram,progress_args=( "``` Trying To Download...```",  ms, c_time   ))
+     	path = await bot.download_media(message = file, progress=progress_for_pyrogram,progress_args=( "```⚡ ᴛʀʏɪɴɢ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ...⏳```",  ms, c_time   ))
      except Exception as e:
      	await ms.edit(e)
      	return
@@ -54,7 +54,7 @@ async def doc(bot,update):
      		await ms.edit("```⏬ ᴜᴘʟᴏᴀᴅɪɴɢ...ʏᴏᴜʀ ꜰɪʟᴇ 📁```")
      		c_time = time.time()
      		try:
-     			await bot.send_document(update.message.chat.id,document = file_path,thumb=ph_path,caption = f"**{new_filename}**",progress=progress_for_pyrogram,progress_args=( "```Trying To Uploading```",  ms, c_time   ))
+     			await bot.send_document(update.message.chat.id,document = file_path,thumb=ph_path,caption = f"**{new_filename}**",progress=progress_for_pyrogram,progress_args=( "```⏬ ᴜᴘʟᴏᴀᴅɪɴɢ...ʏᴏᴜʀ ꜰɪʟᴇ 📁```",  ms, c_time   ))
      			await ms.delete()
      			os.remove(file_path)
      			os.remove(ph_path)
@@ -67,7 +67,7 @@ async def doc(bot,update):
      		await ms.edit("```⏬ ᴜᴘʟᴏᴀᴅɪɴɢ...ʏᴏᴜʀ ꜰɪʟᴇ 📁```")
      		c_time = time.time()
      		try:
-     			await bot.send_document(update.message.chat.id,document = file_path,caption = f"**{new_filename}**",progress=progress_for_pyrogram,progress_args=( "```Trying To Uploading```",  ms, c_time   ))
+     			await bot.send_document(update.message.chat.id,document = file_path,caption = f"**{new_filename}**",progress=progress_for_pyrogram,progress_args=( "```⏬ ᴜᴘʟᴏᴀᴅɪɴɢ...ʏᴏᴜʀ ꜰɪʟᴇ 📁```",  ms, c_time   ))
      			await ms.delete()
      			os.remove(file_path)
      		except Exception as e:
@@ -85,7 +85,7 @@ async def vid(bot,update):
      ms = await update.message.edit("```⚡ ᴛʀʏɪɴɢ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ...⏳```")
      c_time = time.time()
      try:
-     	path = await bot.download_media(message = file, progress=progress_for_pyrogram,progress_args=( "``` Trying To Download...```",  ms, c_time   ))
+     	path = await bot.download_media(message = file, progress=progress_for_pyrogram,progress_args=( "```⚡ᴛʀʏɪɴɢ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ...⏳```",  ms, c_time   ))
      except Exception as e:
      	await ms.edit(e)
      	return
@@ -110,7 +110,7 @@ async def vid(bot,update):
      		await ms.edit("```⏬ ᴜᴘʟᴏᴀᴅɪɴɢ...ʏᴏᴜʀ ꜰɪʟᴇ 📁```")
      		c_time = time.time()
      		try:
-     			await bot.send_video(update.message.chat.id,video = file_path,caption = f"**{new_filename}**",thumb=ph_path,duration =duration, progress=progress_for_pyrogram,progress_args=( "```Trying To Uploading```",  ms, c_time   ))
+     			await bot.send_video(update.message.chat.id,video = file_path,caption = f"**{new_filename}**",thumb=ph_path,duration =duration, progress=progress_for_pyrogram,progress_args=( "```⏬ ᴜᴘʟᴏᴀᴅɪɴɢ...ʏᴏᴜʀ ꜰɪʟᴇ 📁```",  ms, c_time   ))
      			await ms.delete()
      			os.remove(file_path)
      			os.remove(ph_path)   				
@@ -123,7 +123,7 @@ async def vid(bot,update):
      		await ms.edit("```⏬ ᴜᴘʟᴏᴀᴅɪɴɢ...ʏᴏᴜʀ ꜰɪʟᴇ 📁```")
      		c_time = time.time()
      		try:
-     			await bot.send_video(update.message.chat.id,video = file_path,caption = f"**{new_filename}**",duration = duration, progress=progress_for_pyrogram,progress_args=( "```Trying To Uploading```",  ms, c_time   ))
+     			await bot.send_video(update.message.chat.id,video = file_path,caption = f"**{new_filename}**",duration = duration, progress=progress_for_pyrogram,progress_args=( "```⏬ ᴜᴘʟᴏᴀᴅɪɴɢ...ʏᴏᴜʀ ꜰɪʟᴇ 📁```",  ms, c_time   ))
      			await ms.delete()
      			os.remove(file_path)
      		except Exception as e:
@@ -141,7 +141,7 @@ async def aud(bot,update):
      ms = await update.message.edit("```⚡ ᴛʀʏɪɴɢ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ...⏳```")
      c_time = time.time()
      try:
-     	path = await bot.download_media(message = file , progress=progress_for_pyrogram,progress_args=( "``` Trying To Download...```",  ms, c_time   ))
+     	path = await bot.download_media(message = file , progress=progress_for_pyrogram,progress_args=( "``` ⚡ ᴛʀʏɪɴɢ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ...⏳```",  ms, c_time   ))
      except Exception as e:
      	await ms.edit(e)
      	return
@@ -164,7 +164,7 @@ async def aud(bot,update):
      		await ms.edit("```⏬ ᴜᴘʟᴏᴀᴅɪɴɢ...ʏᴏᴜʀ ꜰɪʟᴇ 📁```")
      		c_time = time.time()
      		try:
-     			await bot.send_audio(update.message.chat.id,audio = file_path,caption = f"**{new_filename}**",thumb=ph_path,duration =duration, progress=progress_for_pyrogram,progress_args=( "```Trying To Uploading```",  ms, c_time   ))
+     			await bot.send_audio(update.message.chat.id,audio = file_path,caption = f"**{new_filename}**",thumb=ph_path,duration =duration, progress=progress_for_pyrogram,progress_args=( "```⏬ ᴜᴘʟᴏᴀᴅɪɴɢ...ʏᴏᴜʀ ꜰɪʟᴇ 📁```",  ms, c_time   ))
      			await ms.delete()
      			os.remove(file_path)
      			os.remove(ph_path)
@@ -176,7 +176,7 @@ async def aud(bot,update):
      		await ms.edit("```⏬ ᴜᴘʟᴏᴀᴅɪɴɢ...ʏᴏᴜʀ ꜰɪʟᴇ 📁```")
      		c_time = time.time()
      		try:
-     			await bot.send_audio(update.message.chat.id,audio = file_path,caption = f"**{new_filename}**",duration = duration, progress=progress_for_pyrogram,progress_args=( "```Trying To Uploading```",  ms, c_time   ))
+     			await bot.send_audio(update.message.chat.id,audio = file_path,caption = f"**{new_filename}**",duration = duration, progress=progress_for_pyrogram,progress_args=( "```⏬ ᴜᴘʟᴏᴀᴅɪɴɢ...ʏᴏᴜʀ ꜰɪʟᴇ 📁```",  ms, c_time   ))
      			await ms.delete()
      			os.remove(file_path)
      		except Exception as e:
