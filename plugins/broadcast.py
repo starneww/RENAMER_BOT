@@ -9,7 +9,7 @@ async def broadcast(bot, message):
    ms = await message.reply_text("Geting All ids from database ...........")
    ids = getid()
    tot = len(ids)
-   await ms.edit(f"Starting Broadcast .... \n Sending Message To {tot} Users")
+   await ms.edit(f"sᴛᴀʀᴛɪɴɢ ʙʀᴏᴀᴅᴄᴀsᴛ ....📣\n sᴇɴᴅɪɴɢ ᴍᴇssᴀɢᴇ ᴛᴏ ✅ {tot} Users")
    for id in ids:
      try:
      	await message.reply_to_message.copy(id)
