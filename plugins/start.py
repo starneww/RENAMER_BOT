@@ -8,14 +8,14 @@ async def start(client,message):
 	insert(int(message.chat.id))
 	await message.reply_text(text =f"""
 	Hello {message.from_user.first_name }
-	__I am file renamer bot, Please sent any telegram 
-	**Document Or Video** and enter new filenameto rename it__
+	__➠ I ᴀᴍ ᴀ Sɪᴍᴘʟᴇ TG Fɪʟᴇ 📁 & ᴠɪᴅᴇᴏ 🎥 Rᴇɴᴀᴍᴇʀ ʙᴏᴛ ᴡɪᴛʜ ᴘᴇʀᴍᴀɴᴇɴᴛ ᴄᴜsᴛᴏᴍ ᴛʜᴜᴍʙɴᴀɪʟ sᴜᴘᴘᴏʀᴛ 🎞\n➠Sɪᴍᴘʟʏ Sᴇɴᴅ ᴀɴʏ Iᴍᴀɢᴇ 📷 ᴛᴏ sᴇᴛ ᴄᴜsᴛᴏᴍ ᴛʜᴜᴍʙɴᴀɪʟ 🔳 
+	**➠ Mᴀɪɴᴛᴀɪɴᴇᴅ Bʏ**: **@robo_glitch**__
 	""",reply_to_message_id = message.message_id ,  
 	reply_markup=InlineKeyboardMarkup([[
-          InlineKeyboardButton("Support 🇮🇳" ,url="https://t.me/Mo_Tech_Group"), 
-	  InlineKeyboardButton("Subscribe 🧐", url="https://youtube.com/c/MoTech_YT")
+          InlineKeyboardButton("📮 Sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ 📮" ,url="https://t.me/dubbedweb"), 
+	  InlineKeyboardButton("🔮 ᴏᴛʜᴇʀ ʙᴏᴛs 🔮", url="https://t.me/futurebackups")
           ],[
-          InlineKeyboardButton("🧩 Deploy 🧩", url="https://youtu.be/7ALYUk-rYMc")
+          InlineKeyboardButton("📣  ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ ⚡", url="https://t.me/hddubhub4u")
           ]]
           )
         )
@@ -30,7 +30,7 @@ async def send_doc(client,message):
        filesize = humanize.naturalsize(file.file_size)
        fileid = file.file_id
        await message.reply_text(
-       f"""__What do you want me to do with this file?__\n**File Name** :- {filename}\n**File Size** :- {filesize}"""
+       f"""__ᴡʜᴀᴛ ᴅᴏ ʏᴏᴜ ᴡᴀɴᴛ ᴍᴇ ᴛᴏ ᴅᴏ ᴡɪᴛʜ ᴛʜɪs ꜰɪʟᴇ?__\n**File Name** :- {filename}\n**File Size** :- {filesize}"""
        ,reply_to_message_id = message.message_id,
        reply_markup = InlineKeyboardMarkup([[ InlineKeyboardButton("📝 Rename ",callback_data = "rename")
        ,InlineKeyboardButton("Cancel✖️",callback_data = "cancel")  ]]))
