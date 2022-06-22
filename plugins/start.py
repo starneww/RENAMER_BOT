@@ -12,12 +12,12 @@ async def start(client,message):
 	__\n\n**➠ Mᴀɪɴᴛᴀɪɴᴇᴅ Bʏ**:@robo_glitch__
 	""",reply_to_message_id = message.message_id ,  
 	reply_markup=InlineKeyboardMarkup([[
-          InlineKeyboardButton("📮 Sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ" ,url="https://t.me/dubbedweb"), 
+          InlineKeyboardButton("📮 Sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ", url="https://t.me/dubbedweb"), 
 	  InlineKeyboardButton("🔮 ᴏᴛʜᴇʀ ʙᴏᴛs", url="https://t.me/futurebackups")
           ],[
           InlineKeyboardButton("📣  ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ ", url="https://t.me/hddubhub4u"),
-          InlineKeyboardButton("😈 ᴅᴇᴠᴇʟᴏᴘᴇʀ ",url="https://t.me/robo_glitch") 
-          ].[
+          InlineKeyboardButton("😈 ᴅᴇᴠᴇʟᴏᴘᴇʀ ", url="https://t.me/robo_glitch") 
+          ],[
           )
         )
 
