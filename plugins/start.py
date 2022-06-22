@@ -8,14 +8,14 @@ async def start(client,message):
 	insert(int(message.chat.id))
 	await message.reply_text(text =f"""
 	Hello {message.from_user.first_name }
-	__➠ I ᴀᴍ ᴀ Sɪᴍᴘʟᴇ TG Rᴇɴᴀᴍᴇʀ ʙᴏᴛ ᴡɪᴛʜ ᴘᴇʀᴍᴀɴᴇɴᴛ ᴄᴜsᴛᴏᴍ ᴛʜᴜᴍʙɴᴀɪʟ sᴜᴘᴘᴏʀᴛ 🎞\n\n➠Sɪᴍᴘʟʏ Sᴇɴᴅ ᴀɴʏ Iᴍᴀɢᴇ 📷 ᴛᴏ sᴇᴛ ᴄᴜsᴛᴏᴍ ᴛʜᴜᴍʙɴᴀɪʟ 🔳\n\n➠I ᴄᴀɴ ʀᴇɴᴀᴍᴇ ᴀɴʏ Fɪʟᴇ 📁 ᴀᴜᴅɪᴏ/ᴍᴘ3 🎶 & ᴠɪᴅᴇᴏ 🎥
+	__➠ I ᴀᴍ ᴀ Sɪᴍᴘʟᴇ TG Rᴇɴᴀᴍᴇʀ ʙᴏᴛ ᴡɪᴛʜ ᴘᴇʀᴍᴀɴᴇɴᴛ ᴄᴜsᴛᴏᴍ ᴛʜᴜᴍʙɴᴀɪʟ sᴜᴘᴘᴏʀᴛ 🎞\n\n➠Sɪᴍᴘʟʏ Sᴇɴᴅ ᴀɴʏ Iᴍᴀɢᴇ 📷 ᴛᴏ sᴇᴛ ᴄᴜsᴛᴏᴍ ᴛʜᴜᴍʙɴᴀɪʟ 🔳\n\n➠I ᴄᴀɴ ʀᴇɴᴀᴍᴇ ᴀɴʏ Fɪʟᴇ 📁 ᴀᴜᴅɪᴏ/ᴍᴘ3 🎶  &  ᴠɪᴅᴇᴏ 🎥
 	__\n\n➠ **Mᴀɪɴᴛᴀɪɴᴇᴅ Bʏ**: @robo_glitch __
 	""",reply_to_message_id = message.message_id ,  
 	reply_markup=InlineKeyboardMarkup([[
-          InlineKeyboardButton("📮 Sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ 📮" ,url="https://t.me/dubbedweb"), 
-	  InlineKeyboardButton("🔮 ᴏᴛʜᴇʀ ʙᴏᴛs 🔮", url="https://t.me/futurebackups")
+          InlineKeyboardButton("📮 Sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ" ,url="https://t.me/dubbedweb"), 
+	  InlineKeyboardButton("🔮 ᴏᴛʜᴇʀ ʙᴏᴛs", url="https://t.me/futurebackups")
           ],[
-          InlineKeyboardButton("📣  ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ ⚡", url="https://t.me/hddubhub4u")
+          InlineKeyboardButton("📢 ᴍᴜsᴛ ᴊᴏɪɴ ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ", url="https://t.me/hddubhub4u")
           ]]
           )
         )
